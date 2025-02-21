@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondo_degradado">
+
+    <!-- Logo o Icono central -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:contentDescription="Logo"/>
+        <!--android:src="@drawable/ic_messenger_logo"-->
+
+
+    <!-- Campo de Correo Electrónico -->
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="32dp"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/campo_redondeado"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="12dp"/>
+
+    <!-- Campo de Contraseña -->
+    <EditText
+        android:id="@+id/etContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCorreo"
+        android:layout_marginTop="16dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:background="@drawable/campo_redondeado"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="15dp"/>
+
+    <!-- Botón Iniciar Sesión -->
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etContrasena"
+        android:layout_marginTop="24dp"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/white"
+        android:background="@drawable/boton_redondeado"
+        android:padding="12dp"/>
+
+    <!-- Botón Registrarse -->
+    <TextView
+        android:id="@+id/tvRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnIniciarSesion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="¿No tienes cuenta? Regístrate"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

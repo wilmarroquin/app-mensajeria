@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Encabezado -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/purple_700"
+        android:gravity="center_vertical">
+
+        <!-- Texto Encabezado -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chats"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+        <!-- Icono configuracion -->
+        <ImageView
+            android:id="@+id/btnAyuda"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_configuration"
+            android:tint="@color/white"
+            android:padding="1dp"/>
+    </LinearLayout>
+
+    <!-- Barra de búsqueda -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/headerLayout"
+        android:hint="Buscar"
+        android:background="@drawable/campo_redondeado_busqueda"
+        android:paddingLeft="16dp"
+        android:drawablePadding="10dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <!-- Lista de chats -->
+    <ListView
+        android:id="@+id/listaChats"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/searchBar"
+        android:layout_above="@id/menuInferior"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:padding="8dp"
+        android:background="@color/white"/>
+
+    <!-- Menú inferior -->
+    <LinearLayout
+        android:id="@+id/menuInferior"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@color/purple_500">
+
+        <!-- Boton Grupos -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Icono Grupos -->
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_groups"
+                android:tint="@color/white"/>
+
+            <!-- Texto Grupos -->
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grupos"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <!-- Boton Chats -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Icono Chats -->
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_chat"
+                android:tint="@color/white"/>
+
+            <!-- Texto Chats -->
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chats"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <!-- Boton Invitacion -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Icono Invitacion -->
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_invite"
+                android:tint="@color/white"/>
+
+            <!-- Texto Invitacion -->
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invitacion"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
