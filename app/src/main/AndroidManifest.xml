@@ -18,8 +18,12 @@
             </intent-filter>
         </activity>
 
-        <!-- Actividad Lista de Chats -->
+        <!-- Actividad de la lista layout -->
         <activity android:name=".ListaChatsActivity" />
+        <activity android:name=".GruposActivity"/>
+        <activity android:name=".ChatsActivity"/>
+        <activity android:name=".InvitacionActivity"/>
+
 
     </application>
 

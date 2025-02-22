@@ -7,13 +7,13 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ListaChatsActivity extends AppCompatActivity {
+public class ChatsActivity extends AppCompatActivity {
     private LinearLayout btnGrupos, btnChats, btnInvitacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_chats);
+        setContentView(R.layout.activity_chats);
 
         btnGrupos = findViewById(R.id.btnGrupos);
         btnChats = findViewById(R.id.btnChats);
@@ -21,27 +21,27 @@ public class ListaChatsActivity extends AppCompatActivity {
 
         // Redirigir a la pantalla de Grupos
         btnGrupos.setOnClickListener(v -> {
-            Intent intent = new Intent(ListaChatsActivity.this, GruposActivity.class);
+            Intent intent = new Intent(ChatsActivity.this, GruposActivity.class);
             startActivity(intent);
             seleccionarBoton(btnGrupos);
         });
 
         // Redirigir a la pantalla de Chats
         btnChats.setOnClickListener(v -> {
-            Intent intent = new Intent(ListaChatsActivity.this, ChatsActivity.class);
+            Intent intent = new Intent(ChatsActivity.this, ChatsActivity.class);
             startActivity(intent);
             seleccionarBoton(btnChats);
         });
 
         // Redirigir a la pantalla de Invitación
         btnInvitacion.setOnClickListener(v -> {
-            Intent intent = new Intent(ListaChatsActivity.this, InvitacionActivity.class);
+            Intent intent = new Intent(ChatsActivity.this, InvitacionActivity.class);
             startActivity(intent);
             seleccionarBoton(btnInvitacion);
         });
     }
 
-    // Seleccion de colores
+    // Seleccion de boton
     private void seleccionarBoton(LinearLayout botonSeleccionado) {
         btnGrupos.setBackgroundColor(getResources().getColor(R.color.purple_500));
         btnChats.setBackgroundColor(getResources().getColor(R.color.purple_500));

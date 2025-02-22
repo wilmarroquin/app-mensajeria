@@ -2,7 +2,7 @@
 
     <!-- Tema claro -->
     <style name="Theme.AppMensajeria" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Personaliza aquí los colores o elementos que desees -->
+        <!--  colores -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
