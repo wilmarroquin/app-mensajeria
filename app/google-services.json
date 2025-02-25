@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "273122939839",
+    "project_id": "app-mensajeria-50fa5",
+    "storage_bucket": "app-mensajeria-50fa5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273122939839:android:4144f60547455e7e98c70a",
+        "android_client_info": {
+          "package_name": "com.example.app_mensajeria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZMEKycJ4eyRrYpP3ydPUP4aDDtYLIxoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
